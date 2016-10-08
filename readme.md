@@ -23,5 +23,5 @@ Web-based production calculator built on a NodeJS stack. Currently using informa
 | Soy Field | 0 | +4 Beans | -150c | -25w | -25e | 4 |
 | Cattle Ranch | -4 Beans | +4 Beef | -450c | -50w | -150e | N/A |
 | Cattle Pen | -4 Beans | +4 Beef | -337.5c | -37.5w | -112.5e | 4 |
-| Food Design Workshop | -8 Beef & -8 Wine | +16 Luxury Food | -600c | -320w | -200e | N/A
+| Food Design Workshop | -8 Beef & -8 Wine | +16 Luxury Food | -600c | -320w | -200e | N/A |
 | Molecular Kitchen | -4 Beef & -4 Wine | +8 Luxury Food  | -150c | -80w  | -50e | 4 |
