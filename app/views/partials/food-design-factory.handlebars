@@ -1,36 +1,10 @@
 <ul>
-        <li>
-            <label for="food-design-factory">Food Design Factory</label>
-            <input type="number" name="food_design_factory" id="food-design-factory" value="{{output}}" placeholder="0" />
-            
-            <fieldset>
-                <legend>Cattle Pens</legend>
-                <label>
-                    <span>1</span>
-                    <input type="radio" name="fdf-cattle-pens" id="fdf-cattle-pens" value="1" />
-                </label>
-                
-                <label>
-                    <span>2</span>
-                    <input type="radio" name="fdf-cattle-pens" id="fdf-cattle-pens" value="2" />
-                </label>
-                
-                <label>
-                    <span>3</span>
-                    <input type="radio" name="fdf-cattle-pens" id="fdf-cattle-pens" value="3" />
-                </label>
-                
-                <label>
-                    <span>4</span>
-                    <input type="radio" name="fdf-cattle-pens" id="fdf-cattle-pens" value="4" />
-                </label>
-            </fieldset>
-            
-            <ul>
-                <li>
-                    <label for="fdf-cattle-ranch">Cattle Ranch</label>
-                    <input type="number" name="fdf-cattle-ranch" id="fdf-cattle-ranch" readonly="readonly" value="{{output}}"/>
-                </li>
-            </ul>
-        </li>
-    </ul>
+    <li>
+        <label for="food-design-factory">Food Design Factory</label>
+        <input type="number" name="food_design_factory" id="food-design-factory" value="{{result.foodDesignFactory}}" placeholder="0" />
+
+        {{> cattle-ranch }}
+        
+        {{> vineyard }}
+    </li>
+</ul>

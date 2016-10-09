@@ -12,7 +12,6 @@ var uParser = parser.urlencoded({ extended: false });
 
 var router = express.Router();
 
-
 app.engine('handlebars', handlebars({
     defaultLayout: 'main',
     layoutsDir: __dirname + '/app/views/layouts',
@@ -27,6 +26,7 @@ app.use(compression());
 
 app.use('/calculate', router);
 app.use('/css', express.static(__dirname + '/app/client/css'));
+app.use('/img', express.static(__dirname + '/app/client/img'));
 
 
 app.get('/', function (req, res, next) {
@@ -34,13 +34,30 @@ app.get('/', function (req, res, next) {
 });
 
 router.post('/', uParser, function(req, res, next) {
-    var val = req.body.food_design_factory;
+    var calculations = calculate(req.body);
+    
     res.render('home', {
-        "output": val,
-        "form": req.body
+        "result" : calculations
     });
 });
 
 app.listen(port, function() {
     console.log('App listening on port ' + port);
 });
+
+
+function calculate(data) {
+    var buildings = {
+        foodDesignFactory: 0,
+        soyFarm: 0,
+        cattleRanch: 0,
+        vineyard: 0
+    };
+    
+    buildings.foodDesignFactory = data.food_design_factory;
+    buildings.cattleRanch = buildings.foodDesignFactory * 2;
+    buildings.soyFarm = buildings.cattleRanch * 1;
+    buildings.vineyard = buildings.foodDesignFactory * 2;
+    
+    return buildings;
+};
