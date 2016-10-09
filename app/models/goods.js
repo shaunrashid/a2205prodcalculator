@@ -1,7 +1,7 @@
 module.exports = {
     "luxuryfood": {
         "name" : "Luxury Food",
-        "credits" : 600,
+        "maintenance" : 600,
         "workforce" : 320,
         "energy" : 200,
         "output" : 16,
@@ -19,7 +19,7 @@ module.exports = {
 
     "wine" : {
         "name" : "Wine",
-        "credits" : 300,
+        "maintenance" : 300,
         "workforce" : 50,
         "energy" : 40,
         "output" : 4,
@@ -28,7 +28,7 @@ module.exports = {
 
     "beef" : {
         "name" : "Beef",
-        "credits" : 450,
+        "maintenance" : 450,
         "workforce" : 50,
         "energy" : 150,
         "output" : 4,
@@ -42,7 +42,7 @@ module.exports = {
 
     "soybean" : {
         "name" : "Soy Beans",
-        "credits" : 300,
+        "maintenance" : 300,
         "workforce" : 50,
         "energy" : 50,
         "output" : 4,
