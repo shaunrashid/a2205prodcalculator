@@ -1,0 +1,48 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background: url('/img/anno2205-logo.png') no-repeat left center;
+    background-size: auto 40px;
+    
+    border-bottom: 1px solid #000;
+    
+    display: flex;
+    align-content: center;
+    
+    min-height: 50px;
+    padding: 0 0 0 150px;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 200%;
+    text-transform: uppercase;
+    margin: 0.5rem 0;
+}
+
+h1 span {
+    position: absolute;
+    top: -9999em;
+    left: -9999em;
+}
+
+    
+
+
+input {
+    font-size: 1.2rem;
+    text-align: right;
+
+    padding: 0.6rem;
+    width: 4rem;
+}
+
+li {
+    list-style: none;
+    padding: 1rem;
+}

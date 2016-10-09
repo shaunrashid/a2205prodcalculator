@@ -25,15 +25,15 @@ app.use(uParser);
 app.use(compression());
 
 app.use('/calculate', router);
-app.use('/css', express.static(__dirname + '/app/client/css'));
-app.use('/img', express.static(__dirname + '/app/client/img'));
+app.use('/css', express.static(__dirname + '/app/_static/css'));
+app.use('/img', express.static(__dirname + '/app/_static/img'));
 
 
-app.get('/', function (req, res, next) {
+app.get('/', function (req, res) {
     res.render('home');
 });
 
-router.post('/', uParser, function(req, res, next) {
+router.post('/', uParser, function(req, res) {
     var calculations = calculate(req.body);
     
     res.render('home', {
