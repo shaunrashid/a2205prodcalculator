@@ -1,3 +1,15 @@
 body {
     font-family: sans-serif;
 }
+
+input {
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    width: 4rem;
+    text-align: right;
+}
+
+li {
+    list-style: none;
+    padding: 0.6rem;
+}

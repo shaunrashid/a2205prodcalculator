@@ -41,6 +41,24 @@ router.post('/', uParser, function(req, res, next) {
     });
 });
 
+
+
+
+
+/* REST API SETUP */
+
+var api = express.Router();
+
+var goods = require('./app/models/goods.js');
+
+api.route('/').get(function(req, res) {
+    res.json(goods);
+});
+
+app.use('/api', api);
+
+
+
 app.listen(port, function() {
     console.log('App listening on port ' + port);
 });
@@ -60,4 +78,4 @@ function calculate(data) {
     buildings.vineyard = buildings.foodDesignFactory * 2;
     
     return buildings;
-};
+}
