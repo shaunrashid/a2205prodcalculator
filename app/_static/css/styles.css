@@ -1,18 +1,19 @@
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background: url('/img/anno2205-logo.png') no-repeat left center;
+    background: url('/img/anno2205-logo.png') no-repeat 10px center;
     background-size: auto 40px;
     
     border-bottom: 1px solid #000;
     
     display: flex;
     align-content: center;
-    
     min-height: 50px;
-    padding: 0 0 0 150px;
+    padding: 0 0 0 155px;
 }
 
 h1, h2, h3 {
@@ -31,8 +32,9 @@ h1 span {
     left: -9999em;
 }
 
-    
-
+form {
+    margin: 1rem;
+}
 
 input {
     font-size: 1.2rem;
