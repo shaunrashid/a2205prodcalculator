@@ -25,7 +25,7 @@ app.set('views', __dirname + '/app/views');
 app.use(uParser);
 app.use(compression());
 
-app.use('/api', router);
+app.use('/calculate', router);
 app.use('/css', express.static(__dirname + '/app/client/css'));
 
 
@@ -33,11 +33,13 @@ app.get('/', function (req, res, next) {
     res.render('home');
 });
 
-/* 
 router.post('/', uParser, function(req, res, next) {
-    var mech = req.body.myMech;    
-    res.render('home', {mech: mech});
-}); */
+    var val = req.body.food_design_factory;
+    res.render('home', {
+        "output": val,
+        "form": req.body
+    });
+});
 
 app.listen(port, function() {
     console.log('App listening on port ' + port);
