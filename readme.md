@@ -5,7 +5,7 @@ Web-based production calculator built on a NodeJS stack. Currently using informa
 
 ## Sample Data
 
-### Food Design Workshop
+### Biopolymer Factory
 
 | Building | Input | Output | Credits | Workers | Energy | Max Modules |
 |----------|------:|-------:|--------:|--------:|-------:|------------:|
@@ -17,6 +17,27 @@ Web-based production calculator built on a NodeJS stack. Currently using informa
 | Rice Field | 0 | +9 Organic Food | -18c | -13.5w | -4.5e |
 | Desalinization Plant | 0 | +5 water | -100c | -35w | -10e |
 | Filter Unit | 0 | +5 water | -50c | -17.5w | -5e |
+
+### Rice Farm
+
+| Building | Input | Output | Credits | Workers | Energy | Max Modules |
+|----------|------:|-------:|--------:|--------:|-------:|------------:|
+| Rice Farm | 0 | +5 Organic Food | -20c | -15w | -5e |
+| Rice Field | 0 | +9 Organic Food | -18c | -13.5w | -4.5e |
+
+### Desalinization Plant
+
+| Building | Input | Output | Credits | Workers | Energy | Max Modules |
+|----------|------:|-------:|--------:|--------:|-------:|------------:|
+| Rice Field | 0 | +9 Organic Food | -18c | -13.5w | -4.5e |
+| Desalinization Plant | 0 | +5 water | -100c | -35w | -10e |
+| Filter Unit | 0 | +5 water | -50c | -17.5w | -5e |
+
+
+### Food Design Workshop
+
+| Building | Input | Output | Credits | Workers | Energy | Max Modules |
+|----------|------:|-------:|--------:|--------:|-------:|------------:|
 | Vineyard |0 | +4 Wine | -300c | -50w | -40e | N/A |
 | Vineyard Terrace | 0 | +2 | -75c | -12.5w | -10e | 4 |
 | Soy Farm | 0 | +4 | -300c | -50w | -50e | N/A |
