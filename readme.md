@@ -3,7 +3,7 @@
 Web-based production calculator built on a NodeJS stack. Currently using information from the [Anno 2205 Wiki](http://anno2205.wikia.com/wiki/).
 
 
-## Sample Data
+## Level 1 Goods
 
 ### Biopolymer Factory
 
@@ -13,7 +13,6 @@ Web-based production calculator built on a NodeJS stack. Currently using informa
 | Sunflower Cropland | 0 | +15 Bioresin | -75c | -26.25w | -7.5e | 4 |
 | Biopolymer Factory | -10 Bioresin | +10 Biopolymers | -100c | -30w | -10e | N/A
 | Biopolymer Basins | -5 Bioresin | +5 Biopolymers | -25c | -7.5w | -2.5e | 8 |
-
 
 ### Rice Farm
 
@@ -29,6 +28,7 @@ Web-based production calculator built on a NodeJS stack. Currently using informa
 | Desalinization Plant | 0 | +5 water | -100c | -35w | -10e | N/A
 | Filter Unit | 0 | +5 water | -50c | -17.5w | -5e | 2 |
 
+## Level 3 Goods
 
 ### Food Design Workshop
 
